@@ -1,0 +1,16 @@
+*{
+    font-family: 'EB Garamond', serif;
+    margin: 0;
+    padding: 0;
+}
+.text{
+    text-align: left;
+    background-color: rgb(238, 241, 225);
+    font-size: 18px;
+}
+.text__heading{
+    margin: 14px;
+}
+.text--link{
+    color: rgb(27, 151, 193);
+}

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding: 10px;
+
+}
+.container__head{
+    text-align: center;
+    padding: 7px;
+
+}
+.container--title{
+    color: brown;
+
+}
+.container--img{
+    width: 300px;
+    height: 200px;
+    
+
+}
+.container--text{
+    color: red;
+    text-decoration: none;
+
+}
