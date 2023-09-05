@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let diemKiemTra = +prompt("Nhap diem kiem tra:");
+        let diemGiuaKy = +prompt("Nhap diem giua ky:");
+        let diemCuoiKy = +prompt("Nhap diem cuoi ky:");
+        let diemTongKet = (diemKiemTra + diemGiuaKy + diemCuoiKy) / 3;
+        diemTongKet = diemTongKet.toFixed(0);
+
+        if (diemTongKet <= 100 && diemTongKet >= 90) {
+            console.log(`Diem tong ket la: ${diemTongKet} hoc luc xuat sac`);
+
+        } else if (diemTongKet <= 89 && diemTongKet >= 80) {
+            console.log(`Diem tong ket la: ${diemTongKet} hoc luc gioi`);
+
+        } else if (diemTongKet <= 79 && diemTongKet >= 65) {
+            console.log(`Diem tong ket la: ${diemTongKet} hoc luc kha`);
+
+        } else if (diemTongKet <= 64 && diemTongKet >= 50) {
+            console.log(`Diem tong ket la: ${diemTongKet} hoc luc trung binh`);
+
+        } else if (diemTongKet <= 49 && diemTongKet >= 0) {
+            console.log(`Diem tong ket la: ${diemTongKet} hoc luc yeu`);
+
+        } else {
+            console.log("Diem khong hop le");
+        }
+    </script>
+</body>
+
+</html>
