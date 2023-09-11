@@ -11,9 +11,8 @@
     <script>
         let str = prompt("Hay nhap chuoi can kiem tra: ");
         let arr = str.split("");
-        let result = arr.slice(0);
-        result.reverse();
-        let reverseStr = result.join("");
+        arr.reverse();
+        let reverseStr = arr.join("");
         if (str === reverseStr) {
             console.log(` ${str} la chuoi doi xung `);
         } else {
