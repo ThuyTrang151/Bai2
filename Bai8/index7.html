@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let number = [12, 4, 45, 6, 8, 78, 97, 3, 1, 9];
+        let maxValue = 0;
+        let maxIndex = 0;
+        for (let i = 0; i < number.length; i++) {
+            if (number[i] > maxValue) {
+                maxValue = number[i];
+                maxIndex = i;
+            }
+        }
+        console.log("gia tri lon nhat la: ", maxValue);
+        console.log("vi tri cua gia tri lon nhat la: ", maxIndex);
+    </script>
+</body>
+
+</html>

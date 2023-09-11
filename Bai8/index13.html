@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let str = prompt("Hay nhap chuoi can kiem tra: ");
+        let arr = str.split("");
+        let result = arr.slice(0);
+        result.reverse();
+        let reverseStr = result.join("");
+        if (str === reverseStr) {
+            console.log(` ${str} la chuoi doi xung `);
+        } else {
+            console.log(` ${str} khong phai la chuoi doi xung `);
+        }
+    </script>
+</body>
+
+</html>

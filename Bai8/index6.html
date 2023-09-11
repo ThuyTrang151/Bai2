@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = [12, 4, 45, 6, 8, 78, 97, 3, 1, 9];
+        let newNumber = [];
+        for (let i = 0; i < number.length; i++) {
+            if (number[i] >= 10) { 
+                newNumber.push(number[i]);
+                console.log("cac so lon hon hoac bang 10 la:", number[i]); 
+            }
+        }
+        console.log("tong co: ", newNumber.length);
+    </script>
+</body>
+</html>

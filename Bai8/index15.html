@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = [1, 2, 2, 5, 5, 5, 4, 1, 1];
+        let arr = [];
+        for (let i = 0; i < str.length; i++) {
+            if (!arr.includes(str[i])) {
+                arr.push(str[i]);
+            }
+        }
+        console.log(` Mang moi sau khi loai bo ky tu trung nhau la: ${arr} `);
+    </script>
+</body>
+</html>
