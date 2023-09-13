@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let min;
+        let minValue = (params1, params2, params3) => {
+            min = params1;
+            if (params1 > params2) {
+                min = params2;
+            }
+            if (params2 > params3) {
+                min = params3;
+            }
+            return min;
+        }
+        minValue(2, 6, 9);
+        console.log(`Gia tri nho nhat la: ${min} `);
+    </script>
+</body>
+
+</html>

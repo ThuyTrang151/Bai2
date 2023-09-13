@@ -9,12 +9,13 @@
 
 <body>
     <script>
-        let number = prompt("Hay nhap so nguyen duong");
-        let giaiThua = 1;
-        for (let i = 1; i <= number; i++) {
-            giaiThua *= i;
+        let checkNumber = (number) => {
+            if (Number.isInteger(number)) {
+                return true;
+            }
+            return false;
         }
-        console.log(` Giai thua cua ${number} la ${giaiThua} `);
+        console.log(checkNumber(9));
     </script>
 </body>
 

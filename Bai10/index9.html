@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          function tanSuat(string) {
+            let result = "";
+            for (let i = 0; i < string.length; i++) {
+                let a = string[i];
+                if (result[a]) {
+                    result[a]++;
+                } else {
+                    return 1;
+                }
+            }
+            for (let a in result) {
+                console.log(` Ky tu ${a} xua hien ${result[a]} lan `);
+            }
+        }
+        let string = prompt(" Hay nhap vao chuoi ky tu: ");
+        tanSuat();
+    </script>
+</body>
+</html>
