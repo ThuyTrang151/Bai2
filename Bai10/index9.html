@@ -8,13 +8,13 @@
 <body>
     <script>
           function tanSuat(string) {
-            let result = "";
+            let result = {};
             for (let i = 0; i < string.length; i++) {
                 let a = string[i];
                 if (result[a]) {
                     result[a]++;
                 } else {
-                    return 1;
+                  result[a] = 1  ;
                 }
             }
             for (let a in result) {
@@ -22,7 +22,8 @@
             }
         }
         let string = prompt(" Hay nhap vao chuoi ky tu: ");
-        tanSuat();
+        tanSuat(string);
+
     </script>
 </body>
 </html>
