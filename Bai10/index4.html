@@ -9,13 +9,17 @@
 
 <body>
     <script>
-        let checkNumber = (number) => {
-            if (Number.isInteger(number)) {
-                return true;
-            }
-            return false;
+        let n = prompt('moi nhap: ');
+        function kiemTraKiTuSo(a) {
+            a = Number(a);
+            return !Number.isNaN(a);
         }
-        console.log(checkNumber(9));
+        if (kiemTraKiTuSo(n)) {
+            console.log(`${n} la ki tu so`);
+        }
+        else {
+            console.log(`${n} khong phai la ki tu so`);
+        }
     </script>
 </body>
 

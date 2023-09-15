@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Viết chương trình nhập vào một chuỗi ký tự, xóa ký tự số trong đó.
+     -->
+    <script>
+        let input = (`1a45ct`);
+        let arr = input.split('');
+        let result = arr.filter((item) => {
+            return Number.isNaN(Number(item));
+        })
+        console.log(`Mang moi khong chua ky tu so la: ${result.join("")} `)
+
+      
+
+        
+    </script>
+</body>
+</html>

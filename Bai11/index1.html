@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Nhập vào một chuỗi là 5 chữ số nguyên, tìm số lớn nhất và duy nhất trong 5 số đó.
+        Input: Một chuỗi số nguyên có 5 chữ số
+        Output: Số lớn nhất và cũng là số duy nhất
+        */
+        // let input = +prompt(" Hay nhap chuoi 5 so: ");
+
+        let arr = [1,2,3,4,4];
+        let result = arr.filter((item, index) => {
+            return arr.indexOf(item) == arr.lastIndexOf(item);
+        })
+        // console.log(result);
+        let maxValue = result[0];
+        for (let i = 0; i < result.length; i++) {
+            if (result[i] > maxValue) {
+                maxValue = result[i];
+            }            
+        }
+        console.log(`So lon nhay va duy nhat trong 5 so la: ${maxValue} `);
+
+
+    </script>
+</body>
+
+</html>
