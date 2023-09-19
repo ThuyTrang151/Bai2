@@ -13,13 +13,14 @@
         Tất cả khoảng trắng trong chuỗi phải được giữ lại.
      -->
     <script>
-        let input = 'double  spaces';
+        let input = 'double spaces';
         let arr = input.split(' ');
-        // console.log(arr);
+        console.log(arr);
         let result = arr.map((item) => {
             return item.split('').reverse().join('');
         })
         console.log(`Chuoi dao nguoc la: ${result.join(' ')} `);
+
     </script>
 
 

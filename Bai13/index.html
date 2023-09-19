@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        Phân biệt HTML collection và Nodelist khác nhau như thế nào.
+
+        1. HTML Collection:
+
+- Là một danh sách các phần tử HTML (ví dụ: các phần tử theo tên thẻ, các phần tử theo lớp, ...) 
+được tự động cập nhật bởi trình duyệt.
+- Có thể truy xuất các phần tử bằng cách sử dụng chỉ số hoặc tên của phần tử.
+- Vì HTMLCollection được cập nhật động, nên bất kỳ thay đổi nào trong DOM liên quan đến phần tử 
+trong HTMLCollection đều sẽ được phản ánh ngay lập tức.
+
+        2. NodeList:
+
+- Là một danh sách tĩnh các đối tượng Node (ví dụ: các thẻ HTML, văn bản, chú thích, ...) trong một tài liệu.
+- Có thể truy xuất các đối tượng Node bằng cách sử dụng chỉ số hoặc phương thức forEach() .
+- NodeList không tự động cập nhật khi có thay đổi trong DOM. Điều này có nghĩa là, nếu có thêm, xóa hoặc sửa 
+đổi các phần tử trong DOM, NodeList sẽ không được cập nhật tự động.
+
+
+Tóm lại, HTMLCollection thích hợp hơn khi bạn cần một danh sách động các phần tử HTML, 
+trong khi NodeList thích hợp hơn khi bạn cần một danh sách tĩnh các đối tượng Node trong một tài liệu.
+     -->
+</body>
+
+</html>
