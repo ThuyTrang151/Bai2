@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- 3. tạo giao diện gồm ô input và nút button (save)
+        khi người dùng nhập nội dung vào ô input nhấn (save) sẽ lưu vào 1 cái mảng -->
+    <!-- tao input, tao save, tao mang rong,  -->
+    <div>
+        <label">Ho va ten:</label>
+            <input id="input" type="text">
+            <button id="button">save</button>
+    </div>
+    <script>
+        let input = document.getElementById("input");
+        let button = document.getElementById("button");
+        let arr = [];
+        button.addEventListener('click', function () {
+            let inputValue = input.value;
+            arr.push(inputValue);
+            input.value = '';
+            console.log(arr);
+        })
+    </script>
+
+<!--  
+        function input() {
+        document.getElementById("input");
+    }
+    function button() {
+        document.getElementById("button");
+    }
+    let arr = [];
+    button.addEventListener('click', function(){
+        let inputValue = input.value;
+        arr.push(inputValue);
+        input.value = '';
+        console.log(arr);
+    })
+ -->
+</body>
+
+</html>

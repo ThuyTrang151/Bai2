@@ -9,15 +9,30 @@
 
 <body>
     <script>
-        for (var i = 0; i < arr.length - 1; i++) {
-            for (var j = i + 1; j < arr.length; j++) {
-                if (arr[j] > arr[i]) {
-                    a = arr[i];
+        let arr = [44, 6, 8, 2, 25];
+        let temp = [];
+        for (let i = 0; i < arr.length - 1; i++) {
+            for (let j = i + 1; j < arr.length; j++) {
+                if (arr[j] < arr[i]) {
+                    temp = arr[i];
                     arr[i] = arr[j];
-                    arr[j] = a;
-                }
+                    arr[j] = temp;
+                }                
             }
+
         }
+        console.log(arr);
+
+
+        // for (var i = 0; i < arr.length - 1; i++) {
+        //     for (var j = i + 1; j < arr.length; j++) {
+        //         if (arr[j] > arr[i]) {
+        //             a = arr[i];
+        //             arr[i] = arr[j];
+        //             arr[j] = a;
+        //         }
+        //     }
+        // }
     </script>
 </body>
 
